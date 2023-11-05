@@ -1,0 +1,46 @@
+#include<iostream>
+using namespace std;
+class shape
+{
+public:
+    double length,breath;
+public :
+    void getdata()
+    {
+   cout<<"enter the length";
+   cin>>length;
+   cout<<"enter the breath";
+   cin>>breath;
+    }
+    void virtual display_area()=0;
+ };
+ 
+ class triangle:public shape
+{
+ public:
+  void display_area()
+   {
+   cout<<"the area of triangle is:"<<0.5*length*breath<<endl;
+   }
+};
+
+class rectangle:public shape
+{
+public:
+  void display_area()
+   {  
+    cout<<"the area of rectangle is:"<<length*breath;
+    }
+   
+};
+    
+int main()
+{ triangle T;
+  T.getdata();
+  T.display_area();
+  rectangle R;
+  R.getdata();
+  R.display_area();
+
+return 0;
+}
