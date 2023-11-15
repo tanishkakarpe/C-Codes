@@ -1,0 +1,33 @@
+#include<stdio.h>
+void main() {
+    int i,n,a[10],sumeven=0,sumodd=0;
+    printf("Enter array size : ");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        printf("Enter element at %d position : ",i);
+        scanf("%d",&a[i]);
+    }
+    //code for checking even number
+    printf("Even number : ");
+    for(i=0;i<n;i++)
+    {
+        if(a[i]%2==0)
+        {
+            printf("%d ",a[i]);
+            sumeven+=a[i];
+        }
+    }
+    printf("\nSum of even number is : %d",sumeven);
+    //Code for checking odd number 
+    printf("\nOdd number : ");
+    for(i=0;i<n;i++)
+    {
+        if(a[i]%2!=0)
+        {
+            printf("%d ",a[i]);
+            sumodd+=a[i];
+        }
+    }
+    printf("\nSum of odd number is : %d",sumodd);
+}
