@@ -1,0 +1,46 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+int a,b,c,d;
+float r1,r2,r1real, r1img,r2real, r2img;
+printf("enter the values of a,b,c:");
+scanf("%d%d%d",&a,&d,&c);
+d=b*b-(4*a*c);
+printf("value of dicriminant is %d",d);
+r1=-(b+sqrt(d))/(2*a);
+r2=-(b-sqrt(d))/(2*a);
+//Using Ladder if else conditions
+if (d>0)
+{
+printf("Value ofdiscrimnant is %d",d);
+printf("Roots are r1 and r2 %f%f",r1,r2);
+
+}
+else if(d==0)
+{
+printf ("Discriminant is 0\n roots are same");
+printf("Roots are%f%f",r1,r2);
+}
+else 
+{
+printf("roots are imaginery");
+
+
+//calculating img and real part for r1
+r1real=-b/(2*a);
+r1img=sqrt(d)/(2*a);
+
+//calculating img and real part for r2
+r2real=-b/(2*a);
+r2img=-(sqrt(d))/(2*a);
+//displaying imaginery roots r1 and r2
+printf("r1=%f+%fi\nr2=%f-%fi",r1real,r2img,r2real,r2img);
+}
+}
+
+
+
+
+
+
