@@ -1,0 +1,24 @@
+#include<stdio.h>
+void main()
+{
+int a,b,c,x,y,z;
+printf("valus of x,y,z");
+scanf("%d %d %d",&x,&y,&z);
+//using ladder if else//
+if(x+y+x==180)
+
+printf("The given figure is triangle\n");
+
+if(x==90||y==90||z==90)
+{
+printf("The given triangle is right angle");
+}
+
+else if (x>90||y>90||z>90)
+{printf("The given triangle is obtuse angle triangle");}
+
+else
+{printf("The given triangle is Acute angle triangle");}
+
+}
+
