@@ -1,0 +1,25 @@
+#include<stdio.h>
+void main()
+{
+int a,b,c,x,y,z;
+printf("\nEnter side of triangle");
+scanf("%d %d %d",&a,&b,&c);
+if(a==b&&b==c)
+printf("\n Triangle is equlateral";
+else if(a==b||b==c||c==a)
+printf("\n A Traingle is Isoscelen ");
+else
+printf("\n A Triangle is scalen";)
+x=a*a;
+y=b*b;
+z=c*c;
+
+//using ladder if else//
+if(z==x+y||x==y+z||y==x+z)
+printf("Triangle is right angled triangle");
+else if(z>x+y||x>y+z||y>z+x)
+printf("triangle is obtuse angled  triangle");
+else
+printf("triangle is acute angled triangle");
+}
+
